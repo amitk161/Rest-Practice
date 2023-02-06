@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/63e0ae4a3437d5234867a472
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Amit Kumar",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/63e0ae4a3437d5234867a472
+
+###
+
+PATCH http://localhost:3000/subscribers/63e0ae7e3437d5234867a475
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
